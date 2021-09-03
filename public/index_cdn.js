@@ -50,7 +50,7 @@ const game = new Game({
     rendererSystem, //
     new ImgSystem(),
     new EventSystem(),
-    // new TransitionSystem(),
+    new TransitionSystem(),
   ]
 })
 
