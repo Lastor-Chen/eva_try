@@ -1,3 +1,7 @@
+// npm + webpack 打包版本
+// tutorial from:
+// https://juejin.cn/post/6953511821420527630#heading-25
+
 // 雖然沒 import, 但需要安裝 npm @eva/renderer-adapter
 
 import { resource, RESOURCE_TYPE, Game, GameObject } from '@eva/eva.js'
@@ -39,7 +43,7 @@ const game = new Game({
     new ImgSystem(),
     new EventSystem(),
     new TransitionSystem(),
-  ]
+  ],
 })
 
 // 建立 game object
@@ -53,7 +57,9 @@ const heart = new GameObject('heart', {
 heart.addComponent(new Img({ resource: 'heartImg' }))
 
 // 添加 tap 事件
-heart.addComponent(new Event()).on('tap', () => { alert(1) })
+heart.addComponent(new Event()).on('tap', () => {
+  alert(1)
+})
 
 // 添加位移動畫
 const transition = heart.addComponent(new Transition())

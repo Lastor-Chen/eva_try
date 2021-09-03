@@ -1,3 +1,4 @@
+// 傳統 HTML script 引入 + CDN 版本
 // tutorial from:
 // https://juejin.cn/post/6953511821420527630#heading-25
 
